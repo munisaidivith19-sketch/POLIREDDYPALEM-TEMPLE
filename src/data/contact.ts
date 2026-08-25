@@ -4,15 +4,15 @@ export const contactInfo = {
   email: 'polireddypalemtemple@gmail.com',
   phone: [
   {
-    name: 'MUNI VENKATA RATHNAM',
+    name: 'K.MUNI VENKATA RATHNAM',
     number: '+91 9704879200',
   },
   {
-    name: 'JAI KRISHNA',
+    name: 'A.JAYA KRISHNA',
     number: '+91 9959477100',
   },
   {
-    name: 'RAMESH',
+    name: 'N.RAMESH',
     number: '+91 9989765095',
   },
 ],  

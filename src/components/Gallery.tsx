@@ -23,10 +23,9 @@ export default function Gallery() {
     [filter],
   )
 
-  const close = useCallback(
-    () => setLightboxIndex(null),
-    [],
-  )
+  const close = useCallback(() => {
+    setLightboxIndex(null)
+  }, [])
 
   const next = useCallback(
     () =>
@@ -82,7 +81,6 @@ export default function Gallery() {
       id="gallery"
       className="relative mx-auto max-w-7xl px-5 py-28 md:px-8"
     >
-      
 
       {/* Gallery Filters */}
       <div className="mt-10 flex flex-wrap justify-center gap-2">
@@ -114,14 +112,17 @@ export default function Gallery() {
             onClick={() => setLightboxIndex(i)}
             className="group mb-4 block w-full overflow-hidden rounded-xl border border-gold/15 text-left"
           >
-            <div className="aspect-[4/3] transition-transform duration-500 group-hover:scale-105">
+            {/* Image keeps its natural aspect ratio */}
+            <div className="w-full overflow-hidden">
               <PlaceholderPhoto
                 src={img.src}
                 alt={img.caption}
                 label={img.caption}
+                className="h-auto w-full object-contain transition-transform duration-500 group-hover:scale-105"
               />
             </div>
 
+            {/* Category */}
             <p className="border-t border-gold/10 bg-charcoal/60 px-3 py-2 text-xs text-beige/70">
               {getCategoryName(img.category)}
             </p>
@@ -146,6 +147,7 @@ export default function Gallery() {
                 : 'Image viewer'
             }
           >
+
             {/* Close */}
             <button
               className="absolute right-5 top-5 rounded-full border border-gold/30 p-2 text-ivory"
@@ -179,7 +181,7 @@ export default function Gallery() {
               <ChevronRight size={20} />
             </button>
 
-            {/* Image */}
+            {/* Image Lightbox */}
             <motion.div
               key={lightboxIndex}
               initial={{
@@ -197,14 +199,16 @@ export default function Gallery() {
               transition={{
                 duration: 0.4,
               }}
-              className="max-h-[80vh] w-full max-w-3xl overflow-hidden rounded-2xl border border-gold/20"
+              className="max-h-[90vh] w-auto max-w-[90vw] overflow-hidden rounded-2xl border border-gold/20"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="aspect-[4/3]">
+              {/* Natural image size */}
+              <div className="max-h-[80vh] max-w-[90vw] overflow-auto">
                 <PlaceholderPhoto
                   src={filtered[lightboxIndex].src}
                   alt={filtered[lightboxIndex].caption}
                   label={filtered[lightboxIndex].caption}
+                  className="h-auto max-h-[80vh] w-auto max-w-[90vw] object-contain"
                 />
               </div>
 
@@ -212,9 +216,11 @@ export default function Gallery() {
                 {filtered[lightboxIndex].caption}
               </p>
             </motion.div>
+
           </motion.div>
         )}
       </AnimatePresence>
+
     </section>
   )
 }

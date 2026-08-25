@@ -72,6 +72,13 @@ export const donors: Donor[] = [
   },
 
   {
+    name: 'THIRUMERLA VENKATARAGHAVA REDDY & SARONJNA AMMA',
+    nameTe: 'తిరుమెర్ల వెంకటరాఘవ రెడ్డి & సరోజనమ్మ',
+    amount: '₹1,00,000',
+    date: '09-10-2025',
+  },
+
+  {
     name: 'BATTA SRINIVASULU',
     nameTe: 'బట్ట శ్రీనివాసులు',
     amount: '₹80,000 / Material',
@@ -127,12 +134,7 @@ export const donors: Donor[] = [
     date: '24-06-2026',
   },
 
-  {
-    name: 'THIRUMERIA RUPINJYAYAREDDY',
-    nameTe: 'తిరుమెర్ల రుపింజయ రెడ్డి',
-    amount: '₹50,000',
-    date: '09-10-2025',
-  },
+
 
   {
     name: 'AMBATI SUJATHA',
