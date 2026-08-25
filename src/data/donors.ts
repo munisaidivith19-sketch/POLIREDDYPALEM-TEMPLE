@@ -105,7 +105,14 @@ export const donors: Donor[] = [
     amount: '₹50,116',
     date: '13-07-2026',
   },
-
+  
+  {
+    name: 'GURRAM RAMANAIAH',
+    nameTe: 'గుర్రం రమణయ్య',
+    amount: '₹50,116',
+    date: '14-06-2026',
+  },
+  
   {
     name: 'SAMPARA MADHU SURYAN',
     nameTe: 'సంపర మధు సూర్యన్',
