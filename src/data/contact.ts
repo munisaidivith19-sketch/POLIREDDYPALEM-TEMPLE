@@ -31,7 +31,7 @@ export const bankDetails = {
   ifscCode: 'CNRB0013502',
   branch: 'DORAVARISATRAM',
   upiId: 'COMING SOON',
-  qrCodeImage: "/public/images/temple/qrcode.webp",
+  qrCodeImage: "/images/temple/qrcode.webp",
 }
 
 export const galleryCategories = [
