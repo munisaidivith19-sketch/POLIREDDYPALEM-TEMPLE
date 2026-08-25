@@ -2,7 +2,20 @@
 
 export const contactInfo = {
   email: 'polireddypalemtemple@gmail.com',
-  phone: '+91 9704879200 MUNI VENKATA RATHNAM " JAI KRISHNA +91 9959477100, RAMESH +91 9989765095 ',
+  phone: [
+  {
+    name: 'MUNI VENKATA RATHNAM',
+    number: '+91 9704879200',
+  },
+  {
+    name: 'JAI KRISHNA',
+    number: '+91 9959477100',
+  },
+  {
+    name: 'RAMESH',
+    number: '+91 9989765095',
+  },
+],  
   address:
     'Polireddypale Village, Doravarisatram Mandal, Tirupati District, Andhra Pradesh, India',
   // Once the temple committee shares the exact Google Maps link for the
