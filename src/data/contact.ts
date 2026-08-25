@@ -2,7 +2,7 @@
 
 export const contactInfo = {
   email: 'polireddypalemtemple@gmail.com',
-  phone: phone: [
+  phone:  [
   {
     name: 'MUNI VENKATA RATHNAM',
     number: '+91 9704879200',
