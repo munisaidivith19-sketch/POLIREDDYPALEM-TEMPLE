@@ -2,7 +2,7 @@
 
 export const contactInfo = {
   email: 'polireddypalemtemple@gmail.com',
-  phone:  [
+  phone: [
   {
     name: 'MUNI VENKATA RATHNAM',
     number: '+91 9704879200',
@@ -15,7 +15,7 @@ export const contactInfo = {
     name: 'RAMESH',
     number: '+91 9989765095',
   },
-],
+],  
   address:
     'Polireddypale Village, Doravarisatram Mandal, Tirupati District, Andhra Pradesh, India',
   // Once the temple committee shares the exact Google Maps link for the
@@ -31,7 +31,7 @@ export const bankDetails = {
   ifscCode: 'CNRB0013502',
   branch: 'DORAVARISATRAM',
   upiId: 'COMING SOON',
-  qrCodeImage: "/images/temple/qrcode.webp",
+  qrCodeImage: "/public/images/temple/qrcode.webp",
 }
 
 export const galleryCategories = [
