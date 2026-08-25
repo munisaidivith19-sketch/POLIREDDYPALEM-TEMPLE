@@ -5,7 +5,7 @@ interface TempleLogoProps {
 export default function TempleLogo({ size = 150 }: TempleLogoProps) {
   return (
     <img
-      src="public/images/temple/hero/logo.webp"
+      src="/images/temple/hero/logo.webp"
       alt="Lord Venkateshwara"
       width={size}
       height={size}
