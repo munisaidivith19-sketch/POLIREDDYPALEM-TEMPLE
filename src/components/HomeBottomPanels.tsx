@@ -1,11 +1,4 @@
-import {
-  Heart,
-  MapPin,
-  Phone,
-  Mail,
-  ArrowRight,
-  Users,
-} from 'lucide-react'
+import { Heart, MapPin, Phone, Mail, ArrowRight, Users, } from 'lucide-react'
 import { bankDetails, contactInfo } from '../data/contact'
 import { templeInfo } from '../data/temple'
 import { useLanguage } from '../i18n/LanguageContext'
@@ -121,24 +114,49 @@ export default function HomeBottomPanels() {
               : 'CONTACT US'}
           </h3>
 
-          <ul className="mt-3 space-y-2 text-sm leading-relaxed text-beige/80">
+          <ul className="mt-3 space-y-3 text-sm leading-relaxed text-beige/80">
+
+            {/* Email */}
             <li className="flex items-center gap-2">
               <Mail
                 size={15}
-                className="text-gold-light"
+                className="shrink-0 text-gold-light"
               />
 
-              {contactInfo.email}
+              <a
+                href={`mailto:${contactInfo.email}`}
+                className="hover:text-gold-light"
+              >
+                {contactInfo.email}
+              </a>
             </li>
 
-            <li className="flex items-center gap-2">
-              <Phone
-                size={15}
-                className="text-gold-light"
-              />
+            {/* Phone Contacts */}
+            {contactInfo.phone.map((contact) => (
+              <li
+                key={contact.number}
+                className="flex items-start gap-2"
+              >
+                <Phone
+                  size={15}
+                  className="mt-1 shrink-0 text-gold-light"
+                />
 
-              {contactInfo.phone}
-            </li>
+                <a
+                  href={`tel:${contact.number.replace(/\s/g, '')}`}
+                  className="transition-colors hover:text-gold-light"
+                >
+                  <span className="block font-medium text-ivory">
+                    {contact.name}
+                  </span>
+
+                  <span className="block text-beige/70">
+                    {contact.number}
+                  </span>
+                </a>
+              </li>
+            ))}
+
           </ul>
 
           <a
