@@ -78,8 +78,9 @@ export const constructionStages: ConstructionStage[] = [
     name: 'BAJANA MANDAPAM CONSTRUCTION',
     date: '.',
     description: 'The Bhajana Mandapam is being constructed as a sacred space for bhajans, devotional singing, and spiritual gatherings. It will provide devotees with a peaceful place to come together and continue the villages devotional traditions.',
-    image: '/images/temple/construction/bajana.webp',
-    status: 'upcoming',
+    image: '/images/temple/construction/ashthi.webp',
+    status: 'completed',
   },
+ 
  
 ]
