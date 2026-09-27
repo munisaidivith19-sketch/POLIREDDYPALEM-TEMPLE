@@ -16,18 +16,20 @@ export const donors: Donor[] = [
   },
 
   {
+    name: 'VATTIKAYALA RAGHAVAIAH',
+    nameTe: 'వట్టికాయల రాఘవయ్య',
+    amount: '₹1,73,550 / Material',
+    date: '22-08-2026',
+  },
+  
+  {
     name: 'GANGABATHINA SRINIVASULU & CHENGAIAH',
     nameTe: 'గంగాభత్తిన శ్రీనివాసులు & చెంగయ్య',
     amount: '₹1,59,683 / Material',
     date: '29-04-2026',
   },
 
-  {
-    name: 'VATTIKAYALA RAGHAVAIAH',
-    nameTe: 'వట్టికాయల రాఘవయ్య',
-    amount: '₹1,24,800 / Material',
-    date: '22-08-2026',
-  },
+
 
   {
     name: 'NALLU SANKARAIAH',
@@ -56,6 +58,14 @@ export const donors: Donor[] = [
     amount: '₹1,00,116',
     date: '10-07-2026',
   },
+
+  {
+    name: 'GANGABATHINA VENKATASUBBAIAH & SUBRAMANYAM',
+    nameTe: 'గంగాబత్తిన వెంకటసుబ్బయ్య &   సుబ్రమణ్యం',
+    amount: '₹1,00,116',
+    date: '07-09-2026',
+  },
+  
 
   {
     name: 'NALLU SRINIVASULU',
@@ -121,6 +131,13 @@ export const donors: Donor[] = [
   },
 
   {
+    name: 'INDUKURU GURUMOORTHY',
+    nameTe: 'ఇందుకూరు గురుమూర్తి ',
+    amount: '₹51,116',
+    date: '13-09-2026',
+  },
+
+  {
     name: 'TIRUMERLA MUNI REDDY',
     nameTe: 'తిరుమెర్ల ముని రెడ్డి',
     amount: '₹50,116',
@@ -149,4 +166,12 @@ export const donors: Donor[] = [
     amount: '₹50,000',
     date: '25-06-2026',
   },
+
+  {
+    name: 'MANNURU SRIDARREDDY',
+    nameTe: 'మన్నూరు శ్రీధర్ రెడ్డీ',
+    amount: '₹50,000',
+    date: '17-09-2026',
+  },
+  
 ]
