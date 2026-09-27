@@ -54,6 +54,7 @@ export interface GalleryImage {
 export const galleryImages: GalleryImage[] = [
   { src: "/images/temple/old-temple/oldtemple.webp", category: 'Old Temple', caption: 'Old temple photograph' },
   { src: "/images/temple/gallery/pamplate.webp", category: 'Template', caption: '[Template photograph]' },
+  { src: "/images/temple/gallery/ashthi.webp", category: 'Template', caption: '[Template photograph]' },
   //{ src: null, category: 'Latest Updates', caption: '[Latest update photograph]' },
   //{ src: null, category: 'Festivals', caption: '[Festival photograph]' },
   //{ src: null, category: 'Temple Events', caption: '[Event photograph]' },
